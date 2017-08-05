@@ -1,6 +1,4 @@
-obj_z1/nullradio.o: /home/aignacio/projects/contiki/core/dev/nullradio.c \
- /home/aignacio/projects/contiki/core/./dev/nullradio.h \
- /home/aignacio/projects/contiki/core/./dev/radio.h
-/home/aignacio/projects/contiki/core/dev/nullradio.c :
- /home/aignacio/projects/contiki/core/./dev/nullradio.h :
- /home/aignacio/projects/contiki/core/./dev/radio.h :
+obj_z1/nullradio.o: ..//core/dev/nullradio.c ..//core/./dev/nullradio.h \
+ ..//core/./dev/radio.h
+..//core/dev/nullradio.c ..//core/./dev/nullradio.h :
+ ..//core/./dev/radio.h :

@@ -43,7 +43,7 @@
       org.contikios.cooja.mspmote.Z1MoteType
       <identifier>z12</identifier>
       <description>mqtt_sn</description>
-      <firmware EXPORT="copy">[CONTIKI_DIR]/mqtt_sn/main_core.z1</firmware>
+      <firmware EXPORT="copy">[CONTIKI_DIR]/mqtt-sn-contiki_example/main_core.z1</firmware>
       <moteinterface>org.contikios.cooja.interfaces.Position</moteinterface>
       <moteinterface>org.contikios.cooja.interfaces.RimeAddress</moteinterface>
       <moteinterface>org.contikios.cooja.interfaces.IPAddress</moteinterface>
@@ -79,8 +79,8 @@
       <breakpoints />
       <interface_config>
         org.contikios.cooja.interfaces.Position
-        <x>80.86200186424787</x>
-        <y>66.38289128499596</y>
+        <x>60.088951372362914</x>
+        <y>81.64309376172682</y>
         <z>0.0</z>
       </interface_config>
       <interface_config>
@@ -93,47 +93,11 @@
       </interface_config>
       <motetype_identifier>z12</motetype_identifier>
     </mote>
-    <mote>
-      <breakpoints />
-      <interface_config>
-        org.contikios.cooja.interfaces.Position
-        <x>47.1174325461307</x>
-        <y>96.1612945858723</y>
-        <z>0.0</z>
-      </interface_config>
-      <interface_config>
-        org.contikios.cooja.mspmote.interfaces.MspClock
-        <deviation>1.0</deviation>
-      </interface_config>
-      <interface_config>
-        org.contikios.cooja.mspmote.interfaces.MspMoteID
-        <id>3</id>
-      </interface_config>
-      <motetype_identifier>z12</motetype_identifier>
-    </mote>
-    <mote>
-      <breakpoints />
-      <interface_config>
-        org.contikios.cooja.interfaces.Position
-        <x>106.52060373878857</x>
-        <y>97.97826528489091</y>
-        <z>0.0</z>
-      </interface_config>
-      <interface_config>
-        org.contikios.cooja.mspmote.interfaces.MspClock
-        <deviation>1.0</deviation>
-      </interface_config>
-      <interface_config>
-        org.contikios.cooja.mspmote.interfaces.MspMoteID
-        <id>4</id>
-      </interface_config>
-      <motetype_identifier>z12</motetype_identifier>
-    </mote>
   </simulation>
   <plugin>
     org.contikios.cooja.plugins.SimControl
     <width>357</width>
-    <z>2</z>
+    <z>0</z>
     <height>212</height>
     <location_x>800</location_x>
     <location_y>490</location_y>
@@ -148,10 +112,10 @@
       <skin>org.contikios.cooja.plugins.skins.UDGMVisualizerSkin</skin>
       <skin>org.contikios.cooja.plugins.skins.MoteTypeVisualizerSkin</skin>
       <skin>org.contikios.cooja.plugins.skins.AttributeVisualizerSkin</skin>
-      <viewport>12.5162166289236 0.0 0.0 12.5162166289236 -507.483472292237 -811.5899205045667</viewport>
+      <viewport>12.5162166289236 0.0 0.0 12.5162166289236 -243.483472292237 -813.5899205045667</viewport>
     </plugin_config>
     <width>1157</width>
-    <z>0</z>
+    <z>1</z>
     <height>489</height>
     <location_x>1</location_x>
     <location_y>1</location_y>
@@ -164,7 +128,7 @@
       <coloring />
     </plugin_config>
     <width>787</width>
-    <z>1</z>
+    <z>2</z>
     <height>329</height>
     <location_x>12</location_x>
     <location_y>490</location_y>
@@ -174,8 +138,6 @@
     <plugin_config>
       <mote>0</mote>
       <mote>1</mote>
-      <mote>2</mote>
-      <mote>3</mote>
       <showRadioRXTX />
       <showRadioHW />
       <showLEDs />

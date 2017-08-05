@@ -1,3 +1,2 @@
-obj_z1/petsciiconv.o: \
- /home/aignacio/projects/contiki/core/lib/petsciiconv.c
- /home/aignacio/projects/contiki/core/lib/petsciiconv.c :
+obj_z1/petsciiconv.o: ..//core/lib/petsciiconv.c
+..//core/lib/petsciiconv.c :

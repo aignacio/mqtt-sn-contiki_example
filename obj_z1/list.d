@@ -1,4 +1,2 @@
-obj_z1/list.o: /home/aignacio/projects/contiki/core/lib/list.c \
- /home/aignacio/projects/contiki/core/./lib/list.h
-/home/aignacio/projects/contiki/core/lib/list.c :
- /home/aignacio/projects/contiki/core/./lib/list.h :
+obj_z1/list.o: ..//core/lib/list.c ..//core/./lib/list.h
+..//core/lib/list.c ..//core/./lib/list.h :

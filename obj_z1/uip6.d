@@ -1,132 +1,68 @@
-obj_z1/uip6.o: /home/aignacio/projects/contiki/core/net/ipv6/uip6.c \
- /home/aignacio/projects/contiki/core/./sys/cc.h \
- /home/aignacio/projects/contiki/platform/z1/./contiki-conf.h \
- /home/aignacio/projects/contiki/platform/z1/./platform-conf.h \
- /home/aignacio/projects/contiki/cpu/msp430/./msp430def.h project-conf.h \
- /home/aignacio/projects/contiki/core/./sys/cc-gcc.h \
- /home/aignacio/projects/contiki/core/./net/ip/uip.h \
- /home/aignacio/projects/contiki/core/./net/ip/uipopt.h \
- /home/aignacio/projects/contiki/core/./net/ip/tcpip.h \
- /home/aignacio/projects/contiki/core/./contiki.h \
- /home/aignacio/projects/contiki/core/./contiki-version.h \
- /home/aignacio/projects/contiki/core/./contiki-default-conf.h \
- /home/aignacio/projects/contiki/core/./sys/process.h \
- /home/aignacio/projects/contiki/core/./sys/pt.h \
- /home/aignacio/projects/contiki/core/./sys/lc.h \
- /home/aignacio/projects/contiki/core/./sys/lc-switch.h \
- /home/aignacio/projects/contiki/core/./sys/autostart.h \
- /home/aignacio/projects/contiki/core/./sys/process.h \
- /home/aignacio/projects/contiki/core/./sys/timer.h \
- /home/aignacio/projects/contiki/core/./sys/clock.h \
- /home/aignacio/projects/contiki/core/./sys/ctimer.h \
- /home/aignacio/projects/contiki/core/./sys/etimer.h \
- /home/aignacio/projects/contiki/core/./sys/timer.h \
- /home/aignacio/projects/contiki/core/./sys/etimer.h \
- /home/aignacio/projects/contiki/core/./sys/rtimer.h \
- /home/aignacio/projects/contiki/cpu/msp430/./rtimer-arch.h \
- /home/aignacio/projects/contiki/core/./sys/rtimer.h \
- /home/aignacio/projects/contiki/core/./sys/pt.h \
- /home/aignacio/projects/contiki/core/./sys/procinit.h \
- /home/aignacio/projects/contiki/core/./sys/loader.h \
- /home/aignacio/projects/contiki/core/./sys/clock.h \
- /home/aignacio/projects/contiki/core/./sys/energest.h \
- /home/aignacio/projects/contiki/core/./net/ip/uip_arch.h \
- /home/aignacio/projects/contiki/core/./net/ipv6/uip-icmp6.h \
- /home/aignacio/projects/contiki/core/./net/ipv6/uip-nd6.h \
- /home/aignacio/projects/contiki/core/./sys/stimer.h \
- /home/aignacio/projects/contiki/core/./net/ipv6/uip-ds6.h \
- /home/aignacio/projects/contiki/core/./net/ipv6/uip-ds6-route.h \
- /home/aignacio/projects/contiki/core/./net/nbr-table.h \
- /home/aignacio/projects/contiki/core/./net/linkaddr.h \
- /home/aignacio/projects/contiki/core/./net/netstack.h \
- /home/aignacio/projects/contiki/core/./net/llsec/llsec.h \
- /home/aignacio/projects/contiki/core/./net/mac/mac.h \
- /home/aignacio/projects/contiki/core/./dev/radio.h \
- /home/aignacio/projects/contiki/core/./net/mac/rdc.h \
- /home/aignacio/projects/contiki/core/./net/llsec/llsec802154.h \
- /home/aignacio/projects/contiki/core/./net/mac/frame802154.h \
- /home/aignacio/projects/contiki/core/./net/mac/framer.h \
- /home/aignacio/projects/contiki/core/./lib/list.h \
- /home/aignacio/projects/contiki/core/./net/ipv6/uip-ds6-nbr.h \
- /home/aignacio/projects/contiki/core/./net/ipv6/multicast/uip-mcast6.h \
- /home/aignacio/projects/contiki/core/./net/ipv6/multicast/uip-mcast6-engines.h \
- /home/aignacio/projects/contiki/core/./net/ipv6/multicast/uip-mcast6-route.h \
- /home/aignacio/projects/contiki/core/./net/ipv6/multicast/smrf.h \
- /home/aignacio/projects/contiki/core/./net/ipv6/multicast/esmrf.h \
- /home/aignacio/projects/contiki/core/./net/ipv6/multicast/roll-tm.h \
- /home/aignacio/projects/contiki/core/./net/ipv6/multicast/uip-mcast6-stats.h \
- /home/aignacio/projects/contiki/core/net/rpl/rpl.h \
- /home/aignacio/projects/contiki/core/net/rpl/rpl-conf.h \
- /home/aignacio/projects/contiki/core/./sys/ctimer.h \
- /home/aignacio/projects/contiki/core/net/rpl/rpl-private.h \
- /home/aignacio/projects/contiki/core/./net/rpl/rpl.h \
- /home/aignacio/projects/contiki/core/./net/rpl/rpl-ns.h \
- /home/aignacio/projects/contiki/core/./net/rpl/rpl-conf.h \
- /home/aignacio/projects/contiki/core/./net/ip/uip-debug.h \
- /home/aignacio/projects/contiki/core/./net/net-debug.h
-/home/aignacio/projects/contiki/core/net/ipv6/uip6.c :
- /home/aignacio/projects/contiki/core/./sys/cc.h :
- /home/aignacio/projects/contiki/platform/z1/./contiki-conf.h :
- /home/aignacio/projects/contiki/platform/z1/./platform-conf.h :
- /home/aignacio/projects/contiki/cpu/msp430/./msp430def.h project-conf.h :
- /home/aignacio/projects/contiki/core/./sys/cc-gcc.h :
- /home/aignacio/projects/contiki/core/./net/ip/uip.h :
- /home/aignacio/projects/contiki/core/./net/ip/uipopt.h :
- /home/aignacio/projects/contiki/core/./net/ip/tcpip.h :
- /home/aignacio/projects/contiki/core/./contiki.h :
- /home/aignacio/projects/contiki/core/./contiki-version.h :
- /home/aignacio/projects/contiki/core/./contiki-default-conf.h :
- /home/aignacio/projects/contiki/core/./sys/process.h :
- /home/aignacio/projects/contiki/core/./sys/pt.h :
- /home/aignacio/projects/contiki/core/./sys/lc.h :
- /home/aignacio/projects/contiki/core/./sys/lc-switch.h :
- /home/aignacio/projects/contiki/core/./sys/autostart.h :
- /home/aignacio/projects/contiki/core/./sys/process.h :
- /home/aignacio/projects/contiki/core/./sys/timer.h :
- /home/aignacio/projects/contiki/core/./sys/clock.h :
- /home/aignacio/projects/contiki/core/./sys/ctimer.h :
- /home/aignacio/projects/contiki/core/./sys/etimer.h :
- /home/aignacio/projects/contiki/core/./sys/timer.h :
- /home/aignacio/projects/contiki/core/./sys/etimer.h :
- /home/aignacio/projects/contiki/core/./sys/rtimer.h :
- /home/aignacio/projects/contiki/cpu/msp430/./rtimer-arch.h :
- /home/aignacio/projects/contiki/core/./sys/rtimer.h :
- /home/aignacio/projects/contiki/core/./sys/pt.h :
- /home/aignacio/projects/contiki/core/./sys/procinit.h :
- /home/aignacio/projects/contiki/core/./sys/loader.h :
- /home/aignacio/projects/contiki/core/./sys/clock.h :
- /home/aignacio/projects/contiki/core/./sys/energest.h :
- /home/aignacio/projects/contiki/core/./net/ip/uip_arch.h :
- /home/aignacio/projects/contiki/core/./net/ipv6/uip-icmp6.h :
- /home/aignacio/projects/contiki/core/./net/ipv6/uip-nd6.h :
- /home/aignacio/projects/contiki/core/./sys/stimer.h :
- /home/aignacio/projects/contiki/core/./net/ipv6/uip-ds6.h :
- /home/aignacio/projects/contiki/core/./net/ipv6/uip-ds6-route.h :
- /home/aignacio/projects/contiki/core/./net/nbr-table.h :
- /home/aignacio/projects/contiki/core/./net/linkaddr.h :
- /home/aignacio/projects/contiki/core/./net/netstack.h :
- /home/aignacio/projects/contiki/core/./net/llsec/llsec.h :
- /home/aignacio/projects/contiki/core/./net/mac/mac.h :
- /home/aignacio/projects/contiki/core/./dev/radio.h :
- /home/aignacio/projects/contiki/core/./net/mac/rdc.h :
- /home/aignacio/projects/contiki/core/./net/llsec/llsec802154.h :
- /home/aignacio/projects/contiki/core/./net/mac/frame802154.h :
- /home/aignacio/projects/contiki/core/./net/mac/framer.h :
- /home/aignacio/projects/contiki/core/./lib/list.h :
- /home/aignacio/projects/contiki/core/./net/ipv6/uip-ds6-nbr.h :
- /home/aignacio/projects/contiki/core/./net/ipv6/multicast/uip-mcast6.h :
- /home/aignacio/projects/contiki/core/./net/ipv6/multicast/uip-mcast6-engines.h :
- /home/aignacio/projects/contiki/core/./net/ipv6/multicast/uip-mcast6-route.h :
- /home/aignacio/projects/contiki/core/./net/ipv6/multicast/smrf.h :
- /home/aignacio/projects/contiki/core/./net/ipv6/multicast/esmrf.h :
- /home/aignacio/projects/contiki/core/./net/ipv6/multicast/roll-tm.h :
- /home/aignacio/projects/contiki/core/./net/ipv6/multicast/uip-mcast6-stats.h :
- /home/aignacio/projects/contiki/core/net/rpl/rpl.h :
- /home/aignacio/projects/contiki/core/net/rpl/rpl-conf.h :
- /home/aignacio/projects/contiki/core/./sys/ctimer.h :
- /home/aignacio/projects/contiki/core/net/rpl/rpl-private.h :
- /home/aignacio/projects/contiki/core/./net/rpl/rpl.h :
- /home/aignacio/projects/contiki/core/./net/rpl/rpl-ns.h :
- /home/aignacio/projects/contiki/core/./net/rpl/rpl-conf.h :
- /home/aignacio/projects/contiki/core/./net/ip/uip-debug.h :
- /home/aignacio/projects/contiki/core/./net/net-debug.h :
+obj_z1/uip6.o: ..//core/net/ipv6/uip6.c ..//core/./sys/cc.h \
+ ..//platform/z1/./contiki-conf.h ..//platform/z1/./platform-conf.h \
+ ..//cpu/msp430/./msp430def.h project-conf.h ..//core/./sys/cc-gcc.h \
+ ..//core/./net/ip/uip.h ..//core/./net/ip/uipopt.h \
+ ..//core/./net/ip/tcpip.h ..//core/./contiki.h \
+ ..//core/./contiki-version.h ..//core/./contiki-default-conf.h \
+ ..//core/./sys/process.h ..//core/./sys/pt.h ..//core/./sys/lc.h \
+ ..//core/./sys/lc-switch.h ..//core/./sys/autostart.h \
+ ..//core/./sys/process.h ..//core/./sys/timer.h ..//core/./sys/clock.h \
+ ..//core/./sys/ctimer.h ..//core/./sys/etimer.h ..//core/./sys/timer.h \
+ ..//core/./sys/etimer.h ..//core/./sys/rtimer.h \
+ ..//cpu/msp430/./rtimer-arch.h ..//core/./sys/rtimer.h \
+ ..//core/./sys/pt.h ..//core/./sys/procinit.h ..//core/./sys/loader.h \
+ ..//core/./sys/clock.h ..//core/./sys/energest.h \
+ ..//core/./net/ip/uip_arch.h ..//core/./net/ipv6/uip-icmp6.h \
+ ..//core/./net/ipv6/uip-nd6.h ..//core/./sys/stimer.h \
+ ..//core/./net/ipv6/uip-ds6.h ..//core/./net/ipv6/uip-ds6-route.h \
+ ..//core/./net/nbr-table.h ..//core/./net/linkaddr.h \
+ ..//core/./net/netstack.h ..//core/./net/llsec/llsec.h \
+ ..//core/./net/mac/mac.h ..//core/./dev/radio.h ..//core/./net/mac/rdc.h \
+ ..//core/./net/llsec/llsec802154.h ..//core/./net/mac/frame802154.h \
+ ..//core/./net/mac/framer.h ..//core/./lib/list.h \
+ ..//core/./net/ipv6/uip-ds6-nbr.h \
+ ..//core/./net/ipv6/multicast/uip-mcast6.h \
+ ..//core/./net/ipv6/multicast/uip-mcast6-engines.h \
+ ..//core/./net/ipv6/multicast/uip-mcast6-route.h \
+ ..//core/./net/ipv6/multicast/smrf.h \
+ ..//core/./net/ipv6/multicast/esmrf.h \
+ ..//core/./net/ipv6/multicast/roll-tm.h \
+ ..//core/./net/ipv6/multicast/uip-mcast6-stats.h ..//core/net/rpl/rpl.h \
+ ..//core/net/rpl/rpl-conf.h ..//core/./sys/ctimer.h \
+ ..//core/net/rpl/rpl-private.h ..//core/./net/rpl/rpl.h \
+ ..//core/./net/rpl/rpl-ns.h ..//core/./net/rpl/rpl-conf.h \
+ ..//core/./net/ip/uip-debug.h ..//core/./net/net-debug.h
+..//core/net/ipv6/uip6.c ..//core/./sys/cc.h :
+ ..//platform/z1/./contiki-conf.h ..//platform/z1/./platform-conf.h :
+ ..//cpu/msp430/./msp430def.h project-conf.h ..//core/./sys/cc-gcc.h :
+ ..//core/./net/ip/uip.h ..//core/./net/ip/uipopt.h :
+ ..//core/./net/ip/tcpip.h ..//core/./contiki.h :
+ ..//core/./contiki-version.h ..//core/./contiki-default-conf.h :
+ ..//core/./sys/process.h ..//core/./sys/pt.h ..//core/./sys/lc.h :
+ ..//core/./sys/lc-switch.h ..//core/./sys/autostart.h :
+ ..//core/./sys/process.h ..//core/./sys/timer.h ..//core/./sys/clock.h :
+ ..//core/./sys/ctimer.h ..//core/./sys/etimer.h ..//core/./sys/timer.h :
+ ..//core/./sys/etimer.h ..//core/./sys/rtimer.h :
+ ..//cpu/msp430/./rtimer-arch.h ..//core/./sys/rtimer.h :
+ ..//core/./sys/pt.h ..//core/./sys/procinit.h ..//core/./sys/loader.h :
+ ..//core/./sys/clock.h ..//core/./sys/energest.h :
+ ..//core/./net/ip/uip_arch.h ..//core/./net/ipv6/uip-icmp6.h :
+ ..//core/./net/ipv6/uip-nd6.h ..//core/./sys/stimer.h :
+ ..//core/./net/ipv6/uip-ds6.h ..//core/./net/ipv6/uip-ds6-route.h :
+ ..//core/./net/nbr-table.h ..//core/./net/linkaddr.h :
+ ..//core/./net/netstack.h ..//core/./net/llsec/llsec.h :
+ ..//core/./net/mac/mac.h ..//core/./dev/radio.h ..//core/./net/mac/rdc.h :
+ ..//core/./net/llsec/llsec802154.h ..//core/./net/mac/frame802154.h :
+ ..//core/./net/mac/framer.h ..//core/./lib/list.h :
+ ..//core/./net/ipv6/uip-ds6-nbr.h :
+ ..//core/./net/ipv6/multicast/uip-mcast6.h :
+ ..//core/./net/ipv6/multicast/uip-mcast6-engines.h :
+ ..//core/./net/ipv6/multicast/uip-mcast6-route.h :
+ ..//core/./net/ipv6/multicast/smrf.h :
+ ..//core/./net/ipv6/multicast/esmrf.h :
+ ..//core/./net/ipv6/multicast/roll-tm.h :
+ ..//core/./net/ipv6/multicast/uip-mcast6-stats.h ..//core/net/rpl/rpl.h :
+ ..//core/net/rpl/rpl-conf.h ..//core/./sys/ctimer.h :
+ ..//core/net/rpl/rpl-private.h ..//core/./net/rpl/rpl.h :
+ ..//core/./net/rpl/rpl-ns.h ..//core/./net/rpl/rpl-conf.h :
+ ..//core/./net/ip/uip-debug.h ..//core/./net/net-debug.h :

@@ -1,213 +1,102 @@
-obj_z1/simple-udp.o: \
- /home/aignacio/projects/contiki/core/net/ip/simple-udp.c \
- /home/aignacio/projects/contiki/core/./contiki-net.h \
- /home/aignacio/projects/contiki/core/./contiki.h \
- /home/aignacio/projects/contiki/core/./contiki-version.h \
- /home/aignacio/projects/contiki/platform/z1/./contiki-conf.h \
- /home/aignacio/projects/contiki/platform/z1/./platform-conf.h \
- /home/aignacio/projects/contiki/cpu/msp430/./msp430def.h project-conf.h \
- /home/aignacio/projects/contiki/core/./contiki-default-conf.h \
- /home/aignacio/projects/contiki/core/./sys/process.h \
- /home/aignacio/projects/contiki/core/./sys/pt.h \
- /home/aignacio/projects/contiki/core/./sys/lc.h \
- /home/aignacio/projects/contiki/core/./sys/lc-switch.h \
- /home/aignacio/projects/contiki/core/./sys/cc.h \
- /home/aignacio/projects/contiki/core/./sys/cc-gcc.h \
- /home/aignacio/projects/contiki/core/./sys/autostart.h \
- /home/aignacio/projects/contiki/core/./sys/process.h \
- /home/aignacio/projects/contiki/core/./sys/timer.h \
- /home/aignacio/projects/contiki/core/./sys/clock.h \
- /home/aignacio/projects/contiki/core/./sys/ctimer.h \
- /home/aignacio/projects/contiki/core/./sys/etimer.h \
- /home/aignacio/projects/contiki/core/./sys/timer.h \
- /home/aignacio/projects/contiki/core/./sys/etimer.h \
- /home/aignacio/projects/contiki/core/./sys/rtimer.h \
- /home/aignacio/projects/contiki/cpu/msp430/./rtimer-arch.h \
- /home/aignacio/projects/contiki/core/./sys/rtimer.h \
- /home/aignacio/projects/contiki/core/./sys/pt.h \
- /home/aignacio/projects/contiki/core/./sys/procinit.h \
- /home/aignacio/projects/contiki/core/./sys/loader.h \
- /home/aignacio/projects/contiki/core/./sys/clock.h \
- /home/aignacio/projects/contiki/core/./sys/energest.h \
- /home/aignacio/projects/contiki/core/./net/ip/tcpip.h \
- /home/aignacio/projects/contiki/core/./contiki.h \
- /home/aignacio/projects/contiki/core/./net/ip/uip.h \
- /home/aignacio/projects/contiki/core/./net/ip/uipopt.h \
- /home/aignacio/projects/contiki/core/./net/ip/tcpip.h \
- /home/aignacio/projects/contiki/core/./net/ip/uip.h \
- /home/aignacio/projects/contiki/core/./net/ipv4/uip-fw.h \
- /home/aignacio/projects/contiki/core/./net/ipv4/uip-fw-drv.h \
- /home/aignacio/projects/contiki/core/./net/ipv4/uip-fw.h \
- /home/aignacio/projects/contiki/core/./net/ipv4/uip_arp.h \
- /home/aignacio/projects/contiki/core/./net/ip/uiplib.h \
- /home/aignacio/projects/contiki/core/./net/ip/uip-udp-packet.h \
- /home/aignacio/projects/contiki/core/./net/ip/simple-udp.h \
- /home/aignacio/projects/contiki/core/./net/ip/uip-nameserver.h \
- /home/aignacio/projects/contiki/core/./net/ipv6/uip-icmp6.h \
- /home/aignacio/projects/contiki/core/./net/ipv6/uip-ds6.h \
- /home/aignacio/projects/contiki/core/./sys/stimer.h \
- /home/aignacio/projects/contiki/core/./net/ipv6/uip-nd6.h \
- /home/aignacio/projects/contiki/core/./net/ipv6/uip-ds6-route.h \
- /home/aignacio/projects/contiki/core/./net/nbr-table.h \
- /home/aignacio/projects/contiki/core/./net/linkaddr.h \
- /home/aignacio/projects/contiki/core/./net/netstack.h \
- /home/aignacio/projects/contiki/core/./net/llsec/llsec.h \
- /home/aignacio/projects/contiki/core/./net/mac/mac.h \
- /home/aignacio/projects/contiki/core/./dev/radio.h \
- /home/aignacio/projects/contiki/core/./net/mac/rdc.h \
- /home/aignacio/projects/contiki/core/./net/llsec/llsec802154.h \
- /home/aignacio/projects/contiki/core/./net/mac/frame802154.h \
- /home/aignacio/projects/contiki/core/./net/mac/framer.h \
- /home/aignacio/projects/contiki/core/./lib/list.h \
- /home/aignacio/projects/contiki/core/./net/ipv6/uip-ds6-nbr.h \
- /home/aignacio/projects/contiki/core/./net/ipv6/uip-ds6.h \
- /home/aignacio/projects/contiki/core/./net/ip/resolv.h \
- /home/aignacio/projects/contiki/core/./net/ip/uip.h \
- /home/aignacio/projects/contiki/core/./net/ip/psock.h \
- /home/aignacio/projects/contiki/core/./contiki-lib.h \
- /home/aignacio/projects/contiki/core/./lib/list.h \
- /home/aignacio/projects/contiki/core/./lib/memb.h \
- /home/aignacio/projects/contiki/core/./lib/mmem.h \
- /home/aignacio/projects/contiki/core/./lib/random.h \
- /home/aignacio/projects/contiki/core/./net/ip/udp-socket.h \
- /home/aignacio/projects/contiki/core/./net/ip/tcp-socket.h \
- /home/aignacio/projects/contiki/core/./net/rime/rime.h \
- /home/aignacio/projects/contiki/core/./net/rime/announcement.h \
- /home/aignacio/projects/contiki/core/./net/rime/collect.h \
- /home/aignacio/projects/contiki/core/./net/rime/runicast.h \
- /home/aignacio/projects/contiki/core/./net/rime/stunicast.h \
- /home/aignacio/projects/contiki/core/./sys/ctimer.h \
- /home/aignacio/projects/contiki/core/./net/rime/unicast.h \
- /home/aignacio/projects/contiki/core/./net/rime/broadcast.h \
- /home/aignacio/projects/contiki/core/./net/rime/abc.h \
- /home/aignacio/projects/contiki/core/./net/packetbuf.h \
- /home/aignacio/projects/contiki/core/./net/mac/tsch/tsch-conf.h \
- /home/aignacio/projects/contiki/core/./net/rime/channel.h \
- /home/aignacio/projects/contiki/core/./net/rime/chameleon.h \
- /home/aignacio/projects/contiki/core/./net/queuebuf.h \
- /home/aignacio/projects/contiki/core/./net/rime/neighbor-discovery.h \
- /home/aignacio/projects/contiki/core/./net/rime/collect-neighbor.h \
- /home/aignacio/projects/contiki/core/./net/rime/collect-link-estimate.h \
- /home/aignacio/projects/contiki/core/./net/rime/packetqueue.h \
- /home/aignacio/projects/contiki/core/./lib/memb.h \
- /home/aignacio/projects/contiki/core/./net/rime/ipolite.h \
- /home/aignacio/projects/contiki/core/./net/rime/mesh.h \
- /home/aignacio/projects/contiki/core/./net/rime/multihop.h \
- /home/aignacio/projects/contiki/core/./net/rime/route-discovery.h \
- /home/aignacio/projects/contiki/core/./net/rime/netflood.h \
- /home/aignacio/projects/contiki/core/./net/rime/polite-announcement.h \
- /home/aignacio/projects/contiki/core/./net/rime/polite.h \
- /home/aignacio/projects/contiki/core/./net/rime/rimestats.h \
- /home/aignacio/projects/contiki/core/./net/rime/rmh.h \
- /home/aignacio/projects/contiki/core/./net/rime/route.h \
- /home/aignacio/projects/contiki/core/./net/rime/rucb.h \
- /home/aignacio/projects/contiki/core/./net/rime/timesynch.h \
- /home/aignacio/projects/contiki/core/./net/rime/trickle.h \
- /home/aignacio/projects/contiki/core/./net/netstack.h \
- /home/aignacio/projects/contiki/core/./net/ip/simple-udp.h
- /home/aignacio/projects/contiki/core/net/ip/simple-udp.c :
- /home/aignacio/projects/contiki/core/./contiki-net.h :
- /home/aignacio/projects/contiki/core/./contiki.h :
- /home/aignacio/projects/contiki/core/./contiki-version.h :
- /home/aignacio/projects/contiki/platform/z1/./contiki-conf.h :
- /home/aignacio/projects/contiki/platform/z1/./platform-conf.h :
- /home/aignacio/projects/contiki/cpu/msp430/./msp430def.h project-conf.h :
- /home/aignacio/projects/contiki/core/./contiki-default-conf.h :
- /home/aignacio/projects/contiki/core/./sys/process.h :
- /home/aignacio/projects/contiki/core/./sys/pt.h :
- /home/aignacio/projects/contiki/core/./sys/lc.h :
- /home/aignacio/projects/contiki/core/./sys/lc-switch.h :
- /home/aignacio/projects/contiki/core/./sys/cc.h :
- /home/aignacio/projects/contiki/core/./sys/cc-gcc.h :
- /home/aignacio/projects/contiki/core/./sys/autostart.h :
- /home/aignacio/projects/contiki/core/./sys/process.h :
- /home/aignacio/projects/contiki/core/./sys/timer.h :
- /home/aignacio/projects/contiki/core/./sys/clock.h :
- /home/aignacio/projects/contiki/core/./sys/ctimer.h :
- /home/aignacio/projects/contiki/core/./sys/etimer.h :
- /home/aignacio/projects/contiki/core/./sys/timer.h :
- /home/aignacio/projects/contiki/core/./sys/etimer.h :
- /home/aignacio/projects/contiki/core/./sys/rtimer.h :
- /home/aignacio/projects/contiki/cpu/msp430/./rtimer-arch.h :
- /home/aignacio/projects/contiki/core/./sys/rtimer.h :
- /home/aignacio/projects/contiki/core/./sys/pt.h :
- /home/aignacio/projects/contiki/core/./sys/procinit.h :
- /home/aignacio/projects/contiki/core/./sys/loader.h :
- /home/aignacio/projects/contiki/core/./sys/clock.h :
- /home/aignacio/projects/contiki/core/./sys/energest.h :
- /home/aignacio/projects/contiki/core/./net/ip/tcpip.h :
- /home/aignacio/projects/contiki/core/./contiki.h :
- /home/aignacio/projects/contiki/core/./net/ip/uip.h :
- /home/aignacio/projects/contiki/core/./net/ip/uipopt.h :
- /home/aignacio/projects/contiki/core/./net/ip/tcpip.h :
- /home/aignacio/projects/contiki/core/./net/ip/uip.h :
- /home/aignacio/projects/contiki/core/./net/ipv4/uip-fw.h :
- /home/aignacio/projects/contiki/core/./net/ipv4/uip-fw-drv.h :
- /home/aignacio/projects/contiki/core/./net/ipv4/uip-fw.h :
- /home/aignacio/projects/contiki/core/./net/ipv4/uip_arp.h :
- /home/aignacio/projects/contiki/core/./net/ip/uiplib.h :
- /home/aignacio/projects/contiki/core/./net/ip/uip-udp-packet.h :
- /home/aignacio/projects/contiki/core/./net/ip/simple-udp.h :
- /home/aignacio/projects/contiki/core/./net/ip/uip-nameserver.h :
- /home/aignacio/projects/contiki/core/./net/ipv6/uip-icmp6.h :
- /home/aignacio/projects/contiki/core/./net/ipv6/uip-ds6.h :
- /home/aignacio/projects/contiki/core/./sys/stimer.h :
- /home/aignacio/projects/contiki/core/./net/ipv6/uip-nd6.h :
- /home/aignacio/projects/contiki/core/./net/ipv6/uip-ds6-route.h :
- /home/aignacio/projects/contiki/core/./net/nbr-table.h :
- /home/aignacio/projects/contiki/core/./net/linkaddr.h :
- /home/aignacio/projects/contiki/core/./net/netstack.h :
- /home/aignacio/projects/contiki/core/./net/llsec/llsec.h :
- /home/aignacio/projects/contiki/core/./net/mac/mac.h :
- /home/aignacio/projects/contiki/core/./dev/radio.h :
- /home/aignacio/projects/contiki/core/./net/mac/rdc.h :
- /home/aignacio/projects/contiki/core/./net/llsec/llsec802154.h :
- /home/aignacio/projects/contiki/core/./net/mac/frame802154.h :
- /home/aignacio/projects/contiki/core/./net/mac/framer.h :
- /home/aignacio/projects/contiki/core/./lib/list.h :
- /home/aignacio/projects/contiki/core/./net/ipv6/uip-ds6-nbr.h :
- /home/aignacio/projects/contiki/core/./net/ipv6/uip-ds6.h :
- /home/aignacio/projects/contiki/core/./net/ip/resolv.h :
- /home/aignacio/projects/contiki/core/./net/ip/uip.h :
- /home/aignacio/projects/contiki/core/./net/ip/psock.h :
- /home/aignacio/projects/contiki/core/./contiki-lib.h :
- /home/aignacio/projects/contiki/core/./lib/list.h :
- /home/aignacio/projects/contiki/core/./lib/memb.h :
- /home/aignacio/projects/contiki/core/./lib/mmem.h :
- /home/aignacio/projects/contiki/core/./lib/random.h :
- /home/aignacio/projects/contiki/core/./net/ip/udp-socket.h :
- /home/aignacio/projects/contiki/core/./net/ip/tcp-socket.h :
- /home/aignacio/projects/contiki/core/./net/rime/rime.h :
- /home/aignacio/projects/contiki/core/./net/rime/announcement.h :
- /home/aignacio/projects/contiki/core/./net/rime/collect.h :
- /home/aignacio/projects/contiki/core/./net/rime/runicast.h :
- /home/aignacio/projects/contiki/core/./net/rime/stunicast.h :
- /home/aignacio/projects/contiki/core/./sys/ctimer.h :
- /home/aignacio/projects/contiki/core/./net/rime/unicast.h :
- /home/aignacio/projects/contiki/core/./net/rime/broadcast.h :
- /home/aignacio/projects/contiki/core/./net/rime/abc.h :
- /home/aignacio/projects/contiki/core/./net/packetbuf.h :
- /home/aignacio/projects/contiki/core/./net/mac/tsch/tsch-conf.h :
- /home/aignacio/projects/contiki/core/./net/rime/channel.h :
- /home/aignacio/projects/contiki/core/./net/rime/chameleon.h :
- /home/aignacio/projects/contiki/core/./net/queuebuf.h :
- /home/aignacio/projects/contiki/core/./net/rime/neighbor-discovery.h :
- /home/aignacio/projects/contiki/core/./net/rime/collect-neighbor.h :
- /home/aignacio/projects/contiki/core/./net/rime/collect-link-estimate.h :
- /home/aignacio/projects/contiki/core/./net/rime/packetqueue.h :
- /home/aignacio/projects/contiki/core/./lib/memb.h :
- /home/aignacio/projects/contiki/core/./net/rime/ipolite.h :
- /home/aignacio/projects/contiki/core/./net/rime/mesh.h :
- /home/aignacio/projects/contiki/core/./net/rime/multihop.h :
- /home/aignacio/projects/contiki/core/./net/rime/route-discovery.h :
- /home/aignacio/projects/contiki/core/./net/rime/netflood.h :
- /home/aignacio/projects/contiki/core/./net/rime/polite-announcement.h :
- /home/aignacio/projects/contiki/core/./net/rime/polite.h :
- /home/aignacio/projects/contiki/core/./net/rime/rimestats.h :
- /home/aignacio/projects/contiki/core/./net/rime/rmh.h :
- /home/aignacio/projects/contiki/core/./net/rime/route.h :
- /home/aignacio/projects/contiki/core/./net/rime/rucb.h :
- /home/aignacio/projects/contiki/core/./net/rime/timesynch.h :
- /home/aignacio/projects/contiki/core/./net/rime/trickle.h :
- /home/aignacio/projects/contiki/core/./net/netstack.h :
- /home/aignacio/projects/contiki/core/./net/ip/simple-udp.h :
+obj_z1/simple-udp.o: ..//core/net/ip/simple-udp.c \
+ ..//core/./contiki-net.h ..//core/./contiki.h \
+ ..//core/./contiki-version.h ..//platform/z1/./contiki-conf.h \
+ ..//platform/z1/./platform-conf.h ..//cpu/msp430/./msp430def.h \
+ project-conf.h ..//core/./contiki-default-conf.h \
+ ..//core/./sys/process.h ..//core/./sys/pt.h ..//core/./sys/lc.h \
+ ..//core/./sys/lc-switch.h ..//core/./sys/cc.h ..//core/./sys/cc-gcc.h \
+ ..//core/./sys/autostart.h ..//core/./sys/process.h \
+ ..//core/./sys/timer.h ..//core/./sys/clock.h ..//core/./sys/ctimer.h \
+ ..//core/./sys/etimer.h ..//core/./sys/timer.h ..//core/./sys/etimer.h \
+ ..//core/./sys/rtimer.h ..//cpu/msp430/./rtimer-arch.h \
+ ..//core/./sys/rtimer.h ..//core/./sys/pt.h ..//core/./sys/procinit.h \
+ ..//core/./sys/loader.h ..//core/./sys/clock.h ..//core/./sys/energest.h \
+ ..//core/./net/ip/tcpip.h ..//core/./contiki.h ..//core/./net/ip/uip.h \
+ ..//core/./net/ip/uipopt.h ..//core/./net/ip/tcpip.h \
+ ..//core/./net/ip/uip.h ..//core/./net/ipv4/uip-fw.h \
+ ..//core/./net/ipv4/uip-fw-drv.h ..//core/./net/ipv4/uip-fw.h \
+ ..//core/./net/ipv4/uip_arp.h ..//core/./net/ip/uiplib.h \
+ ..//core/./net/ip/uip-udp-packet.h ..//core/./net/ip/simple-udp.h \
+ ..//core/./net/ip/uip-nameserver.h ..//core/./net/ipv6/uip-icmp6.h \
+ ..//core/./net/ipv6/uip-ds6.h ..//core/./sys/stimer.h \
+ ..//core/./net/ipv6/uip-nd6.h ..//core/./net/ipv6/uip-ds6-route.h \
+ ..//core/./net/nbr-table.h ..//core/./net/linkaddr.h \
+ ..//core/./net/netstack.h ..//core/./net/llsec/llsec.h \
+ ..//core/./net/mac/mac.h ..//core/./dev/radio.h ..//core/./net/mac/rdc.h \
+ ..//core/./net/llsec/llsec802154.h ..//core/./net/mac/frame802154.h \
+ ..//core/./net/mac/framer.h ..//core/./lib/list.h \
+ ..//core/./net/ipv6/uip-ds6-nbr.h ..//core/./net/ipv6/uip-ds6.h \
+ ..//core/./net/ip/resolv.h ..//core/./net/ip/uip.h \
+ ..//core/./net/ip/psock.h ..//core/./contiki-lib.h ..//core/./lib/list.h \
+ ..//core/./lib/memb.h ..//core/./lib/mmem.h ..//core/./lib/random.h \
+ ..//core/./net/ip/udp-socket.h ..//core/./net/ip/tcp-socket.h \
+ ..//core/./net/rime/rime.h ..//core/./net/rime/announcement.h \
+ ..//core/./net/rime/collect.h ..//core/./net/rime/runicast.h \
+ ..//core/./net/rime/stunicast.h ..//core/./sys/ctimer.h \
+ ..//core/./net/rime/unicast.h ..//core/./net/rime/broadcast.h \
+ ..//core/./net/rime/abc.h ..//core/./net/packetbuf.h \
+ ..//core/./net/mac/tsch/tsch-conf.h ..//core/./net/rime/channel.h \
+ ..//core/./net/rime/chameleon.h ..//core/./net/queuebuf.h \
+ ..//core/./net/rime/neighbor-discovery.h \
+ ..//core/./net/rime/collect-neighbor.h \
+ ..//core/./net/rime/collect-link-estimate.h \
+ ..//core/./net/rime/packetqueue.h ..//core/./lib/memb.h \
+ ..//core/./net/rime/ipolite.h ..//core/./net/rime/mesh.h \
+ ..//core/./net/rime/multihop.h ..//core/./net/rime/route-discovery.h \
+ ..//core/./net/rime/netflood.h ..//core/./net/rime/polite-announcement.h \
+ ..//core/./net/rime/polite.h ..//core/./net/rime/rimestats.h \
+ ..//core/./net/rime/rmh.h ..//core/./net/rime/route.h \
+ ..//core/./net/rime/rucb.h ..//core/./net/rime/timesynch.h \
+ ..//core/./net/rime/trickle.h ..//core/./net/netstack.h \
+ ..//core/./net/ip/simple-udp.h
+..//core/net/ip/simple-udp.c :
+ ..//core/./contiki-net.h ..//core/./contiki.h :
+ ..//core/./contiki-version.h ..//platform/z1/./contiki-conf.h :
+ ..//platform/z1/./platform-conf.h ..//cpu/msp430/./msp430def.h :
+ project-conf.h ..//core/./contiki-default-conf.h :
+ ..//core/./sys/process.h ..//core/./sys/pt.h ..//core/./sys/lc.h :
+ ..//core/./sys/lc-switch.h ..//core/./sys/cc.h ..//core/./sys/cc-gcc.h :
+ ..//core/./sys/autostart.h ..//core/./sys/process.h :
+ ..//core/./sys/timer.h ..//core/./sys/clock.h ..//core/./sys/ctimer.h :
+ ..//core/./sys/etimer.h ..//core/./sys/timer.h ..//core/./sys/etimer.h :
+ ..//core/./sys/rtimer.h ..//cpu/msp430/./rtimer-arch.h :
+ ..//core/./sys/rtimer.h ..//core/./sys/pt.h ..//core/./sys/procinit.h :
+ ..//core/./sys/loader.h ..//core/./sys/clock.h ..//core/./sys/energest.h :
+ ..//core/./net/ip/tcpip.h ..//core/./contiki.h ..//core/./net/ip/uip.h :
+ ..//core/./net/ip/uipopt.h ..//core/./net/ip/tcpip.h :
+ ..//core/./net/ip/uip.h ..//core/./net/ipv4/uip-fw.h :
+ ..//core/./net/ipv4/uip-fw-drv.h ..//core/./net/ipv4/uip-fw.h :
+ ..//core/./net/ipv4/uip_arp.h ..//core/./net/ip/uiplib.h :
+ ..//core/./net/ip/uip-udp-packet.h ..//core/./net/ip/simple-udp.h :
+ ..//core/./net/ip/uip-nameserver.h ..//core/./net/ipv6/uip-icmp6.h :
+ ..//core/./net/ipv6/uip-ds6.h ..//core/./sys/stimer.h :
+ ..//core/./net/ipv6/uip-nd6.h ..//core/./net/ipv6/uip-ds6-route.h :
+ ..//core/./net/nbr-table.h ..//core/./net/linkaddr.h :
+ ..//core/./net/netstack.h ..//core/./net/llsec/llsec.h :
+ ..//core/./net/mac/mac.h ..//core/./dev/radio.h ..//core/./net/mac/rdc.h :
+ ..//core/./net/llsec/llsec802154.h ..//core/./net/mac/frame802154.h :
+ ..//core/./net/mac/framer.h ..//core/./lib/list.h :
+ ..//core/./net/ipv6/uip-ds6-nbr.h ..//core/./net/ipv6/uip-ds6.h :
+ ..//core/./net/ip/resolv.h ..//core/./net/ip/uip.h :
+ ..//core/./net/ip/psock.h ..//core/./contiki-lib.h ..//core/./lib/list.h :
+ ..//core/./lib/memb.h ..//core/./lib/mmem.h ..//core/./lib/random.h :
+ ..//core/./net/ip/udp-socket.h ..//core/./net/ip/tcp-socket.h :
+ ..//core/./net/rime/rime.h ..//core/./net/rime/announcement.h :
+ ..//core/./net/rime/collect.h ..//core/./net/rime/runicast.h :
+ ..//core/./net/rime/stunicast.h ..//core/./sys/ctimer.h :
+ ..//core/./net/rime/unicast.h ..//core/./net/rime/broadcast.h :
+ ..//core/./net/rime/abc.h ..//core/./net/packetbuf.h :
+ ..//core/./net/mac/tsch/tsch-conf.h ..//core/./net/rime/channel.h :
+ ..//core/./net/rime/chameleon.h ..//core/./net/queuebuf.h :
+ ..//core/./net/rime/neighbor-discovery.h :
+ ..//core/./net/rime/collect-neighbor.h :
+ ..//core/./net/rime/collect-link-estimate.h :
+ ..//core/./net/rime/packetqueue.h ..//core/./lib/memb.h :
+ ..//core/./net/rime/ipolite.h ..//core/./net/rime/mesh.h :
+ ..//core/./net/rime/multihop.h ..//core/./net/rime/route-discovery.h :
+ ..//core/./net/rime/netflood.h ..//core/./net/rime/polite-announcement.h :
+ ..//core/./net/rime/polite.h ..//core/./net/rime/rimestats.h :
+ ..//core/./net/rime/rmh.h ..//core/./net/rime/route.h :
+ ..//core/./net/rime/rucb.h ..//core/./net/rime/timesynch.h :
+ ..//core/./net/rime/trickle.h ..//core/./net/netstack.h :
+ ..//core/./net/ip/simple-udp.h :

@@ -45,6 +45,7 @@ static uint16_t broker_address[] = {0xaaaa, 0, 0, 0, 0, 0, 0, 0x1};
 static struct   etimer time_poll;
 // static uint16_t tick_process = 0;
 static char     pub_test[20];
+static char     pub_aes[64];
 static char     device_id[17];
 static char     topic_hw[25];
 static char     *topics_mqtt[] = {"/topic_1",
@@ -59,8 +60,20 @@ static char     *topics_mqtt[] = {"/topic_1",
 
 mqtt_sn_con_t mqtt_sn_connection;
 
+void adil_aes_decode(char *data){
+}
+
+void adil_aes_encode(char *data){
+  int a;
+  for (a = 0; a < 64; a++) {
+      *(data+a) = 0x58;
+  }
+  *(data+63) = '\0';
+}
+
 void mqtt_sn_callback(char *topic, char *message){
   printf("\nMessage received:");
+  adil_aes_decode(message);
   printf("\nTopic:%s Message:%s",topic,message);
 }
 
@@ -114,6 +127,11 @@ PROCESS_THREAD(init_system_process, ev, data) {
       PROCESS_WAIT_EVENT();
       sprintf(pub_test,"%s",topic_hw);
       mqtt_sn_pub("/topic_1",pub_test,true,0);
+
+      // sprintf(pub_aes,"xxxxxxxxxxxxxxxxxxxxxxx Teste AES 64 bytes long xxxxxxxxxxxxxxxx");
+      adil_aes_encode(pub_aes);
+      mqtt_sn_pub("/topic_1",pub_aes,true,0);
+
       // debug_os("State MQTT:%s",mqtt_sn_check_status_string());
       if (etimer_expired(&time_poll))
         etimer_reset(&time_poll);
