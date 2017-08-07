@@ -112,7 +112,7 @@
       <skin>org.contikios.cooja.plugins.skins.UDGMVisualizerSkin</skin>
       <skin>org.contikios.cooja.plugins.skins.MoteTypeVisualizerSkin</skin>
       <skin>org.contikios.cooja.plugins.skins.AttributeVisualizerSkin</skin>
-      <viewport>12.5162166289236 0.0 0.0 12.5162166289236 -243.483472292237 -813.5899205045667</viewport>
+      <viewport>18.02335194564998 0.0 0.0 18.02335194564998 -528.8562001008213 -1170.8094855265758</viewport>
     </plugin_config>
     <width>1157</width>
     <z>1</z>
@@ -123,7 +123,7 @@
   <plugin>
     org.contikios.cooja.plugins.LogListener
     <plugin_config>
-      <filter />
+      <filter>ID:2</filter>
       <formatted_time />
       <coloring />
     </plugin_config>

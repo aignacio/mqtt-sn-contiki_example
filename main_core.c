@@ -38,43 +38,43 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "lib/memb.h"
+#include "tiny-AES128-C/aes.h"
 
 static uint16_t udp_port = 1884;
 static uint16_t keep_alive = 5;
 static uint16_t broker_address[] = {0xaaaa, 0, 0, 0, 0, 0, 0, 0x1};
 static struct   etimer time_poll;
-// static uint16_t tick_process = 0;
-static char     pub_test[20];
-static char     pub_aes[64];
 static char     device_id[17];
 static char     topic_hw[25];
-static char     *topics_mqtt[] = {"/topic_1",
-                                  "/topic_2",
-                                  "/topic_3",
-                                  "/topic_4",
-                                  "/topic_5",
-                                  "/topic_6"};
-// static char     *will_topic = "/6lowpan_node/offline";
-// static char     *will_message = "O dispositivo esta offline";
-// This topics will run so much faster than others
+static char     *topics_mqtt[] = {"/crypted",
+                                  "/decrypted"};
+
+uint8_t key_aes[] = {0x2b, 0x7e, 0x15, 0x16, 0x28, 0xae, 0xd2, 0xa6, 0xab, 0xf7, 0x15, 0x88, 0x09, 0xcf, 0x4f, 0x3c};
+uint8_t *buf_encrypted;
+uint8_t *buf_decrypted;
 
 mqtt_sn_con_t mqtt_sn_connection;
 
 void adil_aes_decode(char *data){
+  uint8_t i;
+  for(i = 0; i < 4; ++i)
+  {
+    AES_ECB_decrypt((const uint8_t *)data+(i*16), key_aes, buf_decrypted+(i*16), 64);
+  }
 }
 
 void adil_aes_encode(char *data){
-  int a;
-  for (a = 0; a < 64; a++) {
-      *(data+a) = 0x58;
+  uint8_t i;
+  for(i = 0; i < 4; ++i)
+  {
+    AES_ECB_encrypt((const uint8_t *)data+(i*16), key_aes, buf_encrypted+(i*16), 64);
   }
-  *(data+63) = '\0';
 }
 
 void mqtt_sn_callback(char *topic, char *message){
-  printf("\nMessage received:");
   adil_aes_decode(message);
-  printf("\nTopic:%s Message:%s",topic,message);
+  printf("\nTopic:%s Message decrypted:%s", topic, buf_decrypted);
 }
 
 void init_broker(void){
@@ -90,8 +90,6 @@ void init_broker(void){
   mqtt_sn_connection.udp_port      = udp_port;
   mqtt_sn_connection.ipv6_broker   = broker_address;
   mqtt_sn_connection.keep_alive    = keep_alive;
-  //mqtt_sn_connection.will_topic    = will_topic;   // Configure as 0x00 if you don't want to use
-  //mqtt_sn_connection.will_message  = will_message; // Configure as 0x00 if you don't want to use
   mqtt_sn_connection.will_topic    = 0x00;
   mqtt_sn_connection.will_message  = 0x00;
 
@@ -106,7 +104,7 @@ void init_broker(void){
                      all_topics,
                      ss(all_topics),
                      mqtt_sn_callback);
-  mqtt_sn_sub(topic_hw,0);
+  mqtt_sn_sub(topics_mqtt[0],0);
 }
 
 /*---------------------------------------------------------------------------*/
@@ -118,21 +116,21 @@ PROCESS_THREAD(init_system_process, ev, data) {
   PROCESS_BEGIN();
 
   debug_os("Initializing the MQTT_SN_DEMO");
-
   init_broker();
-
   etimer_set(&time_poll, CLOCK_SECOND);
+
+  // memset(buf_encrypted, 0, 64);
+  // memset(buf_decrypted, 0, 64);
+  buf_encrypted = malloc(64);
+  buf_decrypted = malloc(64);
 
   while(1) {
       PROCESS_WAIT_EVENT();
-      sprintf(pub_test,"%s",topic_hw);
-      mqtt_sn_pub("/topic_1",pub_test,true,0);
 
-      // sprintf(pub_aes,"xxxxxxxxxxxxxxxxxxxxxxx Teste AES 64 bytes long xxxxxxxxxxxxxxxx");
-      adil_aes_encode(pub_aes);
-      mqtt_sn_pub("/topic_1",pub_aes,true,0);
+      uint8_t adil_message[] = {"Adil phd, this message is encrypted!!\0"};
+      adil_aes_encode((char *)adil_message);
+      mqtt_sn_pub("/crypted",(char *)buf_encrypted,true,0);
 
-      // debug_os("State MQTT:%s",mqtt_sn_check_status_string());
       if (etimer_expired(&time_poll))
         etimer_reset(&time_poll);
   }

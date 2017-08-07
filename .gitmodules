@@ -1,0 +1,3 @@
+[submodule "tiny-AES128-C"]
+	path = tiny-AES128-C
+	url = git@github.com:kokke/tiny-AES128-C.git
